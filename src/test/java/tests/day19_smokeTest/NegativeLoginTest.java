@@ -1,5 +1,8 @@
 package tests.day19_smokeTest;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 81bbed5a44becefb9d9b21b6b6e12b7f8b6ec1e7
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.BrcPage;

@@ -25,12 +25,22 @@ public class PozitifLoginTest {
         // Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
 
         String actualUsername= brcPage.kullaniciProfilIsmi.getText();
+<<<<<<< HEAD
         String expectedUsername= ConfigReader.getProperty("brcValidUsername");
+=======
+        String expectedUsername=ConfigReader.getProperty("brcValidUsername");
+>>>>>>> 81bbed5a44becefb9d9b21b6b6e12b7f8b6ec1e7
         Assert.assertEquals(actualUsername,expectedUsername);
 
         Driver.closeDriver();
 
 
 
+<<<<<<< HEAD
     }
 }
+=======
+
+    }
+}
+>>>>>>> 81bbed5a44becefb9d9b21b6b6e12b7f8b6ec1e7

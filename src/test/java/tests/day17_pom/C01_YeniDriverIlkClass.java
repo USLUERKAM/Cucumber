@@ -5,7 +5,11 @@ import utilities.Driver;
 
 public class C01_YeniDriverIlkClass {
 
+<<<<<<< HEAD
     @Test(groups = {"grup1"})
+=======
+    @Test(groups = "grup1")
+>>>>>>> 81bbed5a44becefb9d9b21b6b6e12b7f8b6ec1e7
     public void test01() {
         Driver.getDriver().get("https://www.amazon.com");
         /*

@@ -8,9 +8,13 @@ import pages.DHtmlGoodiesPage;
 import utilities.Driver;
 import utilities.TestBase;
 
-public class Q5_DragAndDrop extends TestBase {
+public class Q5_DragAndDrop {
     // Go to URL : http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html
     // Fill in capitals by country.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 81bbed5a44becefb9d9b21b6b6e12b7f8b6ec1e7
     @Test
     public void test() {
         Driver.getDriver().get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html");
@@ -23,4 +27,12 @@ public class Q5_DragAndDrop extends TestBase {
                 dragAndDrop(dhtmlpage.Seoul, dhtmlpage.southKorea).
                 dragAndDrop(dhtmlpage.Madrid,dhtmlpage.Spain).
                 dragAndDrop(dhtmlpage.Roma,dhtmlpage.Italy).perform();
+<<<<<<< HEAD
     }}
+=======
+
+    }
+
+
+}
+>>>>>>> 81bbed5a44becefb9d9b21b6b6e12b7f8b6ec1e7

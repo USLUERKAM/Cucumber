@@ -9,7 +9,7 @@ import pages.WebDriverUniversityPage;
 import utilities.Driver;
 import utilities.TestBase;
 
-public class Q4_Alert_DependsOn extends TestBase {
+public class Q4_Alert_DependsOn  {
 
        /*
      // 1. "http://webdriveruniversity.com/Popup-Alerts/index.html" adresine gidin
@@ -32,11 +32,16 @@ public class Q4_Alert_DependsOn extends TestBase {
     @Test
     public void alert1(){
         Driver.getDriver().get("http://webdriveruniversity.com/Popup-Alerts/index.html");
+<<<<<<< HEAD
+=======
+
+>>>>>>> 81bbed5a44becefb9d9b21b6b6e12b7f8b6ec1e7
         WebDriverUniversityPage wdup = new WebDriverUniversityPage();
         wdup.javaScriptAlert.click();
         String actualMessage = Driver.getDriver().switchTo().alert().getText();
         String expectedMessage ="I am an alert box!";
         Assert.assertEquals(actualMessage, expectedMessage);
+<<<<<<< HEAD
         Driver.getDriver().switchTo().alert().accept();
     }
     @Test(dependsOnMethods="alert1")
@@ -50,6 +55,27 @@ public class Q4_Alert_DependsOn extends TestBase {
         alert.dismiss();
         Assert.assertTrue(wdup.yaziElementi.isDisplayed());
     }
+=======
+
+        Driver.getDriver().switchTo().alert().accept();
+    }
+
+    @Test(dependsOnMethods="alert1")
+    public void alert2(){
+        Driver.getDriver().get("http://webdriveruniversity.com/Popup-Alerts/index.html");
+
+        WebDriverUniversityPage wdup = new WebDriverUniversityPage();
+        wdup.javaScriptConfirmBox.click();
+        Alert alert = Driver.getDriver().switchTo().alert();
+
+        String expectedMessage= "Press a button!";
+        Assert.assertEquals(alert.getText(),expectedMessage);
+
+        alert.dismiss();
+        Assert.assertTrue(wdup.yaziElementi.isDisplayed());
+    }
+
+>>>>>>> 81bbed5a44becefb9d9b21b6b6e12b7f8b6ec1e7
     /*
     Alert alert = driver.switchTo().alert(); //bu sekilde de kullanimi mevcuttur
     driver.switchTo().alert();    yerine   Alert data turundeki alert variable ini kullandik.
