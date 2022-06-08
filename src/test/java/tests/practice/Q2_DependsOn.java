@@ -14,32 +14,24 @@ public class Q2_DependsOn extends TestBase {
           ilk once facebook a gidin
           sonra facebook a bagimli olarak google a gidin,
           daha sonra google a bagimli olarak amazon a gidin
-<<<<<<< HEAD
+
           driver i kapatin
        */
-       @Test
-       public void facebookTest(){
-           driver.get("http://www.facebook.com");
-       }
-=======
-    driver i kapatin
 
- */
 
     @Test
     public void facebookTest(){
         driver.get("http://www.facebook.com");
     }
 
->>>>>>> 81bbed5a44becefb9d9b21b6b6e12b7f8b6ec1e7
+
     @Test(dependsOnMethods="facebookTest")
     public void googleTest(){
         driver.get("http://www.google.com");
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> 81bbed5a44becefb9d9b21b6b6e12b7f8b6ec1e7
+
+
     @Test(dependsOnMethods="googleTest")
     public void amazonTest(){
         driver.get("http://www.amazon.com");

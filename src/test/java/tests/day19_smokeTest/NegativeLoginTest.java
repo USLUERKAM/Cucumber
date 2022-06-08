@@ -1,8 +1,5 @@
 package tests.day19_smokeTest;
-<<<<<<< HEAD
 
-=======
->>>>>>> 81bbed5a44becefb9d9b21b6b6e12b7f8b6ec1e7
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.BrcPage;
@@ -35,4 +32,43 @@ public class NegativeLoginTest {
     // bu class'da 2 test methodu daha oilusturun
     // biri yanlisKullanici
     // digeri de yanlis sifre ve kullanici adi
+    @Test
+    public void wrongEmailTest() throws InterruptedException {
+        brcPage=new BrcPage();
+        //       https://www.bluerentalcars.com/ adresine git
+        Driver.getDriver().get(ConfigReader.getProperty("brcUrl"));
+        //      login butonuna bas
+        brcPage.ilkLoginButonu.click();
+        //test data user email: customer@bluerentalcars.com ,
+        brcPage.emailTextBox.sendKeys(ConfigReader.getProperty("brcWrongEmail"));
+        //test data password : 12345
+        brcPage.passwordTextBox.sendKeys(ConfigReader.getProperty("brcValidPassword"));
+        //login butonuna tikla
+
+        brcPage.ikinciLoginButonu.click();
+        //Degerleri girildiginde sayfaya  sekilde girilemedigini test et
+        Assert.assertTrue(brcPage.ilkLoginButonu.isDisplayed());
+        Thread.sleep(3000);
+        Driver.closeDriver();
+    }
+
+    @Test
+    public void wrongEmailAndPasswordTest() throws InterruptedException {
+        brcPage=new BrcPage();
+        //       https://www.bluerentalcars.com/ adresine git
+        Driver.getDriver().get(ConfigReader.getProperty("brcUrl"));
+        //      login butonuna bas
+        brcPage.ilkLoginButonu.click();
+        //test data user email: customer@bluerentalcars.com ,
+        brcPage.emailTextBox.sendKeys(ConfigReader.getProperty("brcWrongEmail"));
+        //test data password : 12345
+        brcPage.passwordTextBox.sendKeys(ConfigReader.getProperty("brcWrongPassword"));
+        //login butonuna tikla
+
+        brcPage.ikinciLoginButonu.click();
+        //Degerleri girildiginde sayfaya  sekilde girilemedigini test et
+        Assert.assertTrue(brcPage.ilkLoginButonu.isDisplayed());
+        Thread.sleep(3000);
+         Driver.closeDriver();
+    }
 }

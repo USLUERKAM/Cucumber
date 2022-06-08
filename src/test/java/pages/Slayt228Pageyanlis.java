@@ -19,5 +19,10 @@ public class Slayt228Pageyanlis {
     public WebElement body;
     @FindBy(xpath="(//div[@class='rt-tr-group'])[*]")
     public List<WebElement> satirSayisi;
+    @FindBy (xpath="//div[@class='rt-th rt-resizable-header -cursor-pointer']")
+    public List<WebElement> sutun;
+    @FindBy (xpath="//div[@class='rt-tr-group']")
+    public List<WebElement> satir;
+
 
 }

@@ -9,13 +9,12 @@ import utilities.TestBase;
 
 public class C06_SoftAssert extends TestBase {
 
-    @Test
+    @Test(groups = "grup2")
     public void test01() {
         /*
           Softassertion baslangic ve bitis satirlari arasindaki
           tum assertion'lari yapip
           bitis satirina geldiginde bize buldugu tum hatalari rapor eder
-
          */
         // softassert baslangici obje olusturmaktir
         SoftAssert softAssert=new SoftAssert();

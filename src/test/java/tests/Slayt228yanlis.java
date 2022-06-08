@@ -6,14 +6,16 @@ import pages.Slayt228Pageyanlis;
 import utilities.ConfigReader;
 import utilities.Driver;
 
+import java.util.List;
+
 public class Slayt228yanlis {
     Slayt228Pageyanlis slyt228=new Slayt228Pageyanlis();
 @Test
-        public void test(){
+        public void test() throws InterruptedException {
 
 //    Bir Class olusturun D19_WebtablesHomework
 //    1. “https://demoqa.com/webtables” sayfasina gidin
-      Driver.getDriver().get(ConfigReader.getProperty("Slayt228"));
+      Driver.getDriver().get(ConfigReader.getProperty("Slayt228yanlis"));
 
 
 //    2. Headers da bulunan department isimlerini yazdirin
@@ -26,10 +28,15 @@ public class Slayt228yanlis {
     System.out.println();
     System.out.println(slyt228.baslik6.getText());
 
-
 //    4. Tablodaki tum datalari yazdirin
     System.out.println(slyt228.body.getText());
 //    5. Tabloda kac cell (data) oldugunu yazdirin
+    System.out.println(slyt228.sutun.size());
+    System.out.println(slyt228.satir.size());
+
+    int cell= slyt228.sutun.size()*slyt228.satir.size();
+    System.out.println(cell);
+
 
 //    6. Tablodaki satir sayisini yazdirin
    // System.out.println(slyt228.satirSayisi.size());yanlis oldu
