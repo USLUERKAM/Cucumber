@@ -11,13 +11,10 @@ import utilities.Driver;
 
 public class AmazonStepDefinations {
     AmazonPage amazonPage = new AmazonPage();
-
     @Given("kullanici amazon anasayfasinda")
     public void kullanici_amazon_anasayfasinda() {
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
-
     }
-
     @Then("kullanici Nutella icin arama yapar")
     public void kullanici_nutella_icin_arama_yapar() {
         amazonPage.aramaKutusu.sendKeys("Nutella" + Keys.ENTER);

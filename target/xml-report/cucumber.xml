@@ -1,41 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.736">
-    <testcase classname="US1010 herokuappUrl sitesinde test yapar" name="TC15 herokuapp'dan delete butonu calismali" time="7.613">
-        <failure message="chrome not reachable&#10;  (Session info: chrome=102.0.5005.63)&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'DESKTOP-0GR68A5', ip: '192.168.1.37', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [9c27e7b600a4206da32a83adaa94d80c, close {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ERKAMU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52119}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52119/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9c27e7b600a4206da32a83adaa94d80c" type="org.openqa.selenium.WebDriverException"><![CDATA[Given kullanici "herokuappUrl" anasayfasinda................................passed
-And add element butonuna basar..............................................passed
-Then Delete butonu gorunur oluncaya kadar bekler............................passed
-And Delete butonunun gorunur oldugunu test eder.............................passed
-Then Delete butonuna basar..................................................passed
-And Delete butonunun gorunmedigini test eder................................passed
-And sayfayi kapatir.........................................................failed
-
-StackTrace:
-org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=102.0.5005.63)
-Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'DESKTOP-0GR68A5', ip: '192.168.1.37', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9c27e7b600a4206da32a83adaa94d80c, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ERKAMU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52119}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52119/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9c27e7b600a4206da32a83adaa94d80c
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:452)
-	at utilities.Driver.closeDriver(Driver.java:69)
-	at stepDefinitions.AmazonStepDefinations.sayfayi_kapatir(AmazonStepDefinations.java:35)
-	at ✽.sayfayi kapatir(file:///C:/Users/ERKAM%20USLU/IdeaProjects/Cucumber/src/test/resources/features/US1010%20herokuappUrlSitesindeTest.feature:11)
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.143">
+    <testcase classname="US1001 Kullanici Amazon sayfasinda arama yapar" name="TC03 kullanici iphone aratir" time="0.007">
+        <system-out><![CDATA[When kullanici amazon anasayfasinda.........................................passed
+Then kullanici iphone icin arama yapar......................................passed
+And sonuclarin iphone icerdigini test eder..................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1003 kullanici parameter kullanarak arama yapabilmeli" name="TC06 kullanici parametre ile amazonda arama yapabilmeli" time="0.001">
+        <system-out><![CDATA[Given kullanici amazon anasayfasinda........................................passed
+And kullanici "java" icin arama yapar.......................................passed
+And sonuclarin "hava" icerdigini test eder..................................passed
+Then sayfayi kapatir........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US1005 dogru kullanici adi ve sifre ile giris yapabilmeli" name="TC08 positive login test" time="0.004">
+        <system-out><![CDATA[Given kullanici "hmcUrl" anasayfasinda......................................passed
+Then Log in yazisina tiklar.................................................passed
+And gecerli username girer..................................................passed
+And gecerli password girer..................................................passed
+And Login butonuna basar....................................................passed
+Then sayfaya giris yaptigini kontrol eder...................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
     </testcase>
 </testsuite>
