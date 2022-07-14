@@ -26,7 +26,6 @@ public class AmazonStepDefinations {
         String actualAramaSonucStr = amazonPage.aramaSonucElementi.getText();
         Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
     }
-
     @Then("sayfayi kapatir")
     public void sayfayi_kapatir() {
         Driver.closeDriver();
@@ -42,8 +41,6 @@ public class AmazonStepDefinations {
         String actualAramaSonucStr = amazonPage.aramaSonucElementi.getText();
         Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
     }
-
-
     @Then("kullanici iphone icin arama yapar")
     public void kullaniciIphoneIcinAramaYapar() {
         amazonPage.aramaKutusu.sendKeys("iphone" + Keys.ENTER);
@@ -66,7 +63,6 @@ public class AmazonStepDefinations {
         String actualAramaSonucStr = amazonPage.aramaSonucElementi.getText();
         Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
     }
-
     @Given("kullanici {string} anasayfasinda")
     public void kullanici_anasayfasinda(String istenenUrl) {
 Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
@@ -77,7 +73,6 @@ Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
         String actualUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains(arananKelime));
     }
-
     @Then("{int} saniye bekler")
     public void saniyeBekler(int istenenSaniye) {
         try {

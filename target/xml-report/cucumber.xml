@@ -14,7 +14,7 @@ And sonuclarin "hava" icerdigini test eder..................................pass
 Then sayfayi kapatir........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US1005 dogru kullanici adi ve sifre ile giris yapabilmeli" name="TC08 positive login test" time="0.004">
+    <testcase classname="US1005 dogru kullanici adi ve sifre ile giris yapabilmeli" name="TC08 positive login test" time="0.003">
         <system-out><![CDATA[Given kullanici "hmcUrl" anasayfasinda......................................passed
 Then Log in yazisina tiklar.................................................passed
 And gecerli username girer..................................................passed
